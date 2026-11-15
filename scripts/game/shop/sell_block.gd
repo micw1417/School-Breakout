@@ -1,15 +1,26 @@
 extends Control
-
 class_name SellBlock
 
 @export var card_frame: TextureRect
+@onready var block_display: TextureRect = $TextureRect/BlockDisplay
+@onready var price: Label = $TextureRect/Price
+@onready var description: Label = $TextureRect/Description
+
 var hovering: bool
 
 func _ready() -> void:
+	Globals.levels_beat = 1
 	determine_identity()
 
 func determine_identity():
-	pass
+	randomize()
+	match Globals.levels_beat:
+		1:
+			var random_block = Globals.lvl_1_blocks.keys().pick_random()
+			print(random_block)
+			price.text = random_block["price"]
+			block_display.texture = random_block["image"]
+			description.text = random_block["description"]
 
 func _process(_delta):
 	if is_mouse_over_card():

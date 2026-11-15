@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5uqfxkx64tdw"
-path="res://.godot/imported/BlankYellow.png-348463f645d0dfd1b24b326cc8013730.ctex"
+uid="uid://drv0k32a46gpc"
+path="res://.godot/imported/PurpleBrush.png-3c11a048eb8573797c18135def7f05d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BlankYellow.png"
-dest_files=["res://.godot/imported/BlankYellow.png-348463f645d0dfd1b24b326cc8013730.ctex"]
+source_file="res://assets/sprites/Rectangles/Purple/PurpleBrush.png"
+dest_files=["res://.godot/imported/PurpleBrush.png-3c11a048eb8573797c18135def7f05d4.ctex"]
 
 [params]
 

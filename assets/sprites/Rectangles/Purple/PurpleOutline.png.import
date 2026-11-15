@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bptcga023xf55"
-path="res://.godot/imported/BlankGreen.png-1ed36ee1a5154b4914a5e9e86b0a2d0a.ctex"
+uid="uid://bhjpgqc5xvc6b"
+path="res://.godot/imported/PurpleOutline.png-5808844527fee4eeabe17efb9d03240e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BlankGreen.png"
-dest_files=["res://.godot/imported/BlankGreen.png-1ed36ee1a5154b4914a5e9e86b0a2d0a.ctex"]
+source_file="res://assets/sprites/Rectangles/Purple/PurpleOutline.png"
+dest_files=["res://.godot/imported/PurpleOutline.png-5808844527fee4eeabe17efb9d03240e.ctex"]
 
 [params]
 

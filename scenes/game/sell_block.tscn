@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dsdwv62srg1ed" path="res://scripts/game/shop/sell_block.gd" id="1_fqlvl"]
 [ext_resource type="Texture2D" uid="uid://by141oiiiotwk" path="res://assets/unused/temp_shopitem.png" id="2_d3k0n"]
+[ext_resource type="Texture2D" uid="uid://dn3r2ajcc5sp" path="res://assets/sprites/Rectangles/BlankBlock.png" id="3_d3k0n"]
 
 [node name="SellBlock" type="Control" unique_id=1747621845 node_paths=PackedStringArray("card_frame")]
 custom_minimum_size = Vector2(40, 40)
@@ -20,6 +21,15 @@ offset_right = 40.0
 offset_bottom = 30.0
 texture = ExtResource("2_d3k0n")
 
+[node name="BlockDisplay" type="TextureRect" parent="TextureRect" unique_id=1775045516]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 35.0
+offset_bottom = 22.0
+texture = ExtResource("3_d3k0n")
+stretch_mode = 2
+
 [node name="Price" type="Label" parent="TextureRect" unique_id=1234094203]
 layout_mode = 0
 offset_left = -7.0
@@ -30,3 +40,10 @@ theme_override_font_sizes/font_size = 12
 text = "100 pts"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Description" type="Label" parent="TextureRect" unique_id=1926897533]
+layout_mode = 0
+offset_top = 45.0
+offset_right = 40.0
+offset_bottom = 68.0
+text = "Hi"

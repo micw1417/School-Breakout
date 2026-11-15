@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn3r2ajcc5sp"
-path="res://.godot/imported/BlankBlock.png-4f9ceccea2d218d4a7fc8b45b461a368.ctex"
+uid="uid://b8utte6ls7fgi"
+path="res://.godot/imported/OrangeExplore.png-58e98349d6ecd8855b6a487f776e2e02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BlankBlock.png"
-dest_files=["res://.godot/imported/BlankBlock.png-4f9ceccea2d218d4a7fc8b45b461a368.ctex"]
+source_file="res://assets/sprites/Rectangles/Orange/OrangeExplore.png"
+dest_files=["res://.godot/imported/OrangeExplore.png-58e98349d6ecd8855b6a487f776e2e02.ctex"]
 
 [params]
 

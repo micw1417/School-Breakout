@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg2v6fckeawqs"
-path="res://.godot/imported/BlankRed.png-c36d266b45c1d1178179639060b5b06e.ctex"
+uid="uid://da7703g6ik0gq"
+path="res://.godot/imported/OrangePresident.png-80c2f673c944a9ff4378ae6038664f5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BlankRed.png"
-dest_files=["res://.godot/imported/BlankRed.png-c36d266b45c1d1178179639060b5b06e.ctex"]
+source_file="res://assets/sprites/Rectangles/Orange/OrangePresident.png"
+dest_files=["res://.godot/imported/OrangePresident.png-80c2f673c944a9ff4378ae6038664f5b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmvwog7bn0mue"
-path="res://.godot/imported/BlankBlue.png-129d0e237d680931c0b4979e9687f54c.ctex"
+uid="uid://cse58se1avw7w"
+path="res://.godot/imported/RedMultiply.png-f63e1b58182bc50bd427e1de54465bea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/BlankBlue.png"
-dest_files=["res://.godot/imported/BlankBlue.png-129d0e237d680931c0b4979e9687f54c.ctex"]
+source_file="res://assets/sprites/Rectangles/Red/RedMultiply.png"
+dest_files=["res://.godot/imported/RedMultiply.png-f63e1b58182bc50bd427e1de54465bea.ctex"]
 
 [params]
 
