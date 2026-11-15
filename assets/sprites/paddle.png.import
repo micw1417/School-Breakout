@@ -10,8 +10,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/sprites/paddle.png"
-dest_files=["res://.godot/imported/paddle.png-6b2d6588b560b2b5d18cf909795ae935.ctex"]
+source_file="res://assets/sprites/Paddle.png"
+dest_files=["res://.godot/imported/Paddle.png-4da60f78806e63432466648d59a0d0e1.ctex"]
 
 [params]
 
