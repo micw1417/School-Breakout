@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://r8wp5cgbrqsu"]
 
-[ext_resource type="Texture2D" path="res://paddle.png" id="1_gn4f3"]
-[ext_resource type="Script" path="res://paddle.gd" id="1_tbytw"]
+[ext_resource type="Texture2D" uid="uid://wp251v1yu5rd" path="res://assets/sprites/paddle.png" id="1_gn4f3"]
+[ext_resource type="Script" uid="uid://cqf3hi5gr61h8" path="res://scripts/game/paddle.gd" id="1_tbytw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc5dt"]
 size = Vector2(18, 10)
