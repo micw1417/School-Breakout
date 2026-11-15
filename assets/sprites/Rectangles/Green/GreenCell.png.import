@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpxaw44j5n2lr"
-path="res://.godot/imported/GreenMito.png-652648eda1ddce2069b74845a494e54f.ctex"
+uid="uid://e6k3x24wplk4"
+path="res://.godot/imported/GreenCell.png-be914fd98a0a9c08697b05e7b5b84071.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Rectangles/Orange/Green/GreenMito.png"
-dest_files=["res://.godot/imported/GreenMito.png-652648eda1ddce2069b74845a494e54f.ctex"]
+source_file="res://assets/sprites/Rectangles/Green/GreenCell.png"
+dest_files=["res://.godot/imported/GreenCell.png-be914fd98a0a9c08697b05e7b5b84071.ctex"]
 
 [params]
 

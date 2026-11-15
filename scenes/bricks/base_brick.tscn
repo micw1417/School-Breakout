@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bp37okfpnhm61"]
 
-[ext_resource type="Texture2D" uid="uid://dn3r2ajcc5sp" path="res://assets/sprites/BlankBlock.png" id="1_t2y5r"]
+[ext_resource type="Texture2D" uid="uid://dn3r2ajcc5sp" path="res://assets/sprites/Rectangles/BlankBlock.png" id="1_t2y5r"]
 [ext_resource type="Script" uid="uid://neu0i7nad582" path="res://scenes/bricks/base_brick.gd" id="1_ttr2m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j67wb"]
@@ -19,7 +19,6 @@ texture = ExtResource("1_t2y5r")
 scale = Vector2(0.75, 0.75)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=241965724]
-visible = false
 position = Vector2(0, -4.7683716e-07)
 shape = SubResource("RectangleShape2D_j67wb")
 

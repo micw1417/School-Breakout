@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fyvpryv0w752"
-path="res://.godot/imported/GreenGas.png-19612dd6e4edf6378e29fc8e9ea528be.ctex"
+uid="uid://bptcga023xf55"
+path="res://.godot/imported/BlankGreen.png-da0e5952ba9b4bf23e14a5f00e911c30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Rectangles/Orange/Green/GreenGas.png"
-dest_files=["res://.godot/imported/GreenGas.png-19612dd6e4edf6378e29fc8e9ea528be.ctex"]
+source_file="res://assets/sprites/Rectangles/Green/BlankGreen.png"
+dest_files=["res://.godot/imported/BlankGreen.png-da0e5952ba9b4bf23e14a5f00e911c30.ctex"]
 
 [params]
 

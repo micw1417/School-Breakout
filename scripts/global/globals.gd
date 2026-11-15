@@ -5,13 +5,13 @@ static var levels_beat := 0
 
 static var lvl_1_blocks = {
 	"Multiplication":
-		{"price": 100, "image": ImageTexture, "description": ""},
+		{"price": 67, "image": preload("uid://cse58se1avw7w"), "description": ""},
 	"Addition":
-		{"price": 100, "image": ImageTexture, "description": ""},
+		{"price": 68, "image": preload("uid://dda7vbsju4nav"), "description": ""},
 	"Subtraction":
-		{"price": 100, "image": ImageTexture, "description": ""},
+		{"price": 69, "image": preload("uid://c8ioqvhg3bmco"), "description": ""},
 	"Division":
-		{"price": 100, "image": ImageTexture, "description": ""},
+		{"price": 70, "image": preload("res://assets/sprites/Rectangles/BlankBlock.png"), "description": ""},
 }
 static var lvl_2_blocks = {
 	"Analogy":
