@@ -9,7 +9,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-
+	self.position.y = 165
 	var direction := Input.get_axis("left", "right")
 	var target_velocity = direction * speed
 
@@ -18,7 +18,6 @@ func _process(delta: float) -> void:
 		target_velocity,
 		acceleration
  	)
-
 	velocity.y = 0
 
 	move_and_slide()

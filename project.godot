@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="School-Breakout"
-run/main_scene="uid://bp37okfpnhm61"
+run/main_scene="uid://by2fgmuoygxfj"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://di3pynf8b5q7r"
 
 [autoload]
 

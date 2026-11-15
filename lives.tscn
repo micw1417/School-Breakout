@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bxatbjd65virk"]
+
+[ext_resource type="Texture2D" uid="uid://c6dsmimtbwba6" path="res://assets/sprites/FullMarble.png" id="1_e1v4y"]
+[ext_resource type="Texture2D" uid="uid://dr1r5ep1t857x" path="res://assets/sprites/HalfMarble.png" id="2_oknbp"]
+[ext_resource type="Texture2D" uid="uid://l10m0trv04ap" path="res://assets/sprites/LowMarble.png" id="3_llwtm"]
+[ext_resource type="Texture2D" uid="uid://pgbbvffu6oox" path="res://assets/sprites/NoMarble.png" id="4_toety"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gc5dt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_toety")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_llwtm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_oknbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_e1v4y")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Lives" type="AnimatedSprite2D" unique_id=1109915042]
+sprite_frames = SubResource("SpriteFrames_gc5dt")

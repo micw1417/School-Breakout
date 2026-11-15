@@ -3,6 +3,18 @@ extends Node
 static var points : int
 static var levels_beat := 0
 static var is_active := false
+static var lives: = 3
+static var currentLevel := Levels.ENGLISH
+
+enum Levels {
+	ENGLISH,
+	HISTORY,
+	MATH,
+	SCIENCE,
+	ART
+}
+
+
 #blocks_invintory
 static var lvl_1_blocks = {
 	"Multiplication":
