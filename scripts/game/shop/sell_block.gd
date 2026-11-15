@@ -9,6 +9,7 @@ class_name SellBlock
 var hovering: bool
 
 func _ready() -> void:
+	print(Globals.points)
 	Globals.levels_beat = 1
 	determine_identity()
 
@@ -18,6 +19,30 @@ func determine_identity():
 		1:
 			var random_block = Globals.lvl_1_blocks.keys().pick_random()
 			var block_information = Globals.lvl_1_blocks[random_block]
+			price_tag.text = str(block_information["price"])
+			block_display.texture = block_information["image"]
+			description.text = block_information["description"]
+		2:
+			var random_block = Globals.lvl_2_blocks.keys().pick_random()
+			var block_information = Globals.lvl_2_blocks[random_block]
+			price_tag.text = str(block_information["price"])
+			block_display.texture = block_information["image"]
+			description.text = block_information["description"]
+		3:
+			var random_block = Globals.lvl_3_blocks.keys().pick_random()
+			var block_information = Globals.lvl_3_blocks[random_block]
+			price_tag.text = str(block_information["price"])
+			block_display.texture = block_information["image"]
+			description.text = block_information["description"]
+		4:
+			var random_block = Globals.lvl_4_blocks.keys().pick_random()
+			var block_information = Globals.lvl_4_blocks[random_block]
+			price_tag.text = str(block_information["price"])
+			block_display.texture = block_information["image"]
+			description.text = block_information["description"]
+		5:
+			var random_block = Globals.lvl_5_blocks.keys().pick_random()
+			var block_information = Globals.lvl_5_blocks[random_block]
 			price_tag.text = str(block_information["price"])
 			block_display.texture = block_information["image"]
 			description.text = block_information["description"]
@@ -41,7 +66,11 @@ func _input(event) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and hovering:
 			
-			# You can insert additional code here 
+			# You can insert additional code here
+			if Globals.points < int(price_tag.text):
+				return
+			Globals.points -= int(price_tag.text)
+			print(Globals.points)
 			# that does things when the block is bought
 			
 			#Delete card

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://csxx4ththl44e"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_njqk4"]
+[ext_resource type="Script" uid="uid://by4n36kuh7r3d" path="res://scripts/game/bricks/purple/paintbrush.gd" id="2_rw276"]
+
+[node name="Paintbrush" unique_id=1103306286 instance=ExtResource("1_njqk4")]
+script = ExtResource("2_rw276")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bp37okfpnhm61"]
 
 [ext_resource type="Texture2D" uid="uid://dn3r2ajcc5sp" path="res://assets/sprites/Rectangles/BlankBlock.png" id="1_t2y5r"]
-[ext_resource type="Script" uid="uid://neu0i7nad582" path="res://scenes/bricks/base_brick.gd" id="1_ttr2m"]
+[ext_resource type="Script" uid="uid://neu0i7nad582" path="res://scripts/game/bricks/base_brick.gd" id="1_ttr2m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j67wb"]
 size = Vector2(40, 21.333334)

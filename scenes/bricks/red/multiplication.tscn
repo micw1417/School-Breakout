@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://hnwf4lnswyy2"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_eoujx"]
+[ext_resource type="Script" uid="uid://dipr671tgl2fe" path="res://scripts/game/bricks/red/multiplication.gd" id="2_j73xs"]
+
+[node name="Multiplication" unique_id=1103306286 instance=ExtResource("1_eoujx")]
+script = ExtResource("2_j73xs")

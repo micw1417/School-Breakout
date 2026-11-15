@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dy1didh4k1okl"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_dcprl"]
+[ext_resource type="Script" uid="uid://g2m2b2hqmlus" path="res://scripts/game/bricks/red/addition.gd" id="2_wdc54"]
+
+[node name="Addition" unique_id=1103306286 instance=ExtResource("1_dcprl")]
+script = ExtResource("2_wdc54")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dj58m8nsf3dau"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_p6yvl"]
+[ext_resource type="Script" uid="uid://04thi1mal1c5" path="res://scripts/game/bricks/green/gas.gd" id="2_fc68j"]
+
+[node name="Gas" unique_id=1103306286 instance=ExtResource("1_p6yvl")]
+script = ExtResource("2_fc68j")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://570u4pn0c6ym"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_bdtjo"]
+[ext_resource type="Script" uid="uid://edbf6qmebg2n" path="res://scripts/game/bricks/purple/paper_airplane.gd" id="2_buse3"]
+
+[node name="PaperAirplane" unique_id=1103306286 instance=ExtResource("1_bdtjo")]
+script = ExtResource("2_buse3")

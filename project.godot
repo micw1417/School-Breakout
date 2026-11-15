@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="School-Breakout"
-run/main_scene="uid://by2fgmuoygxfj"
+run/main_scene="uid://bp37okfpnhm61"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -55,7 +55,9 @@ right={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 2d/snap/snap_2d_transforms_to_pixel=true
 textures/snap/snap_2d_transforms_to_pixel=false
 textures/default_gravity=980.0
+2d/canvas_textures/default_texture_filter=0

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ij88bvnia8lg"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_j7cad"]
+[ext_resource type="Script" uid="uid://cftrq36a47a2u" path="res://scripts/game/bricks/orange/president.gd" id="2_8dm1m"]
+
+[node name="President" unique_id=1103306286 instance=ExtResource("1_j7cad")]
+script = ExtResource("2_8dm1m")

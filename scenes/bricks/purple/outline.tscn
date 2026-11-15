@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://beh1e5yjm50da"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_hj6n1"]
+[ext_resource type="Script" uid="uid://caprfynyxm80r" path="res://scripts/game/bricks/purple/outline.gd" id="2_ulqot"]
+
+[node name="Outline" unique_id=1103306286 instance=ExtResource("1_hj6n1")]
+script = ExtResource("2_ulqot")

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cfs5j1i3igll1"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_avsnn"]
+[ext_resource type="Script" uid="uid://c7d5wmwf2sm5x" path="res://scripts/game/bricks/purple/spill.gd" id="2_iewbd"]
+
+[node name="Spill" unique_id=1103306286 instance=ExtResource("1_avsnn")]
+script = ExtResource("2_iewbd")

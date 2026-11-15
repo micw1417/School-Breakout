@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://x0qgxb4gp6xg"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_trm33"]
+[ext_resource type="Script" uid="uid://dhe486mu2n874" path="res://scripts/game/bricks/orange/census.gd" id="2_ivc1x"]
+
+[node name="Census" unique_id=1103306286 instance=ExtResource("1_trm33")]
+script = ExtResource("2_ivc1x")

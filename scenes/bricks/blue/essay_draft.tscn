@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dkttbvkm2lle"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_ew7mw"]
+[ext_resource type="Script" uid="uid://bln55apgf3mh4" path="res://scripts/game/bricks/blue/essay_draft.gd" id="2_iprvf"]
+
+[node name="EssayDraft" unique_id=1103306286 instance=ExtResource("1_ew7mw")]
+script = ExtResource("2_iprvf")

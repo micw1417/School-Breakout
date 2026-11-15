@@ -22,15 +22,15 @@ offset_bottom = 40.0
 
 [node name="Row1" type="HBoxContainer" parent="." unique_id=202479686]
 layout_mode = 0
-offset_left = 219.0
-offset_right = 259.0
+offset_left = 181.0
+offset_right = 221.0
 offset_bottom = 40.0
-theme_override_constants/separation = 10
+theme_override_constants/separation = 24
 
 [node name="Row2" type="HBoxContainer" parent="." unique_id=2088931250]
 layout_mode = 0
-offset_left = 219.0
+offset_left = 181.0
 offset_top = 90.0
-offset_right = 259.0
+offset_right = 221.0
 offset_bottom = 130.0
-theme_override_constants/separation = 10
+theme_override_constants/separation = 24

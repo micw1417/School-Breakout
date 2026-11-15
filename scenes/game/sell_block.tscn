@@ -33,17 +33,25 @@ stretch_mode = 2
 [node name="Price" type="Label" parent="TextureRect" unique_id=1234094203]
 layout_mode = 0
 offset_left = -7.0
-offset_top = 26.0
+offset_top = 24.0
 offset_right = 49.0
-offset_bottom = 49.0
-theme_override_font_sizes/font_size = 12
-text = "100 pts"
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "10 pts"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Description" type="Label" parent="TextureRect" unique_id=1926897533]
+custom_maximum_size = Vector2(50, 50)
 layout_mode = 0
-offset_top = 45.0
-offset_right = 40.0
-offset_bottom = 68.0
-text = "Hi"
+offset_left = -4.0
+offset_top = 40.0
+offset_right = 46.0
+offset_bottom = 61.0
+theme_override_constants/line_spacing = -3
+theme_override_font_sizes/font_size = 8
+text = "This is a description"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

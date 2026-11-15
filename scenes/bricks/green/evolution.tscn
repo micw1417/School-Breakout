@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b87y1yfao7swk"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_px88v"]
+[ext_resource type="Script" uid="uid://bocus3jdctgso" path="res://scripts/game/bricks/green/evolution.gd" id="2_2tmnj"]
+
+[node name="Evolution" unique_id=1103306286 instance=ExtResource("1_px88v")]
+script = ExtResource("2_2tmnj")

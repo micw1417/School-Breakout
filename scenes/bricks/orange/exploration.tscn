@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://08i5aa0h0xgl"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_r73g3"]
+[ext_resource type="Script" uid="uid://dklurxt5j0yat" path="res://scripts/game/bricks/orange/exploration.gd" id="2_8el24"]
+
+[node name="Exploration" unique_id=1103306286 instance=ExtResource("1_r73g3")]
+script = ExtResource("2_8el24")

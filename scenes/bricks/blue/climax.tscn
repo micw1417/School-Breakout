@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://24ggm68vso3t"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_chtjm"]
+[ext_resource type="Script" uid="uid://dao086tpu1vur" path="res://scripts/game/bricks/blue/climax.gd" id="2_02a5t"]
+
+[node name="Climax" unique_id=1103306286 instance=ExtResource("1_chtjm")]
+script = ExtResource("2_02a5t")

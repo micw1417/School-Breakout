@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://lmt7fp63ee7k"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_itw5a"]
+[ext_resource type="Script" uid="uid://ca6n3h7xxhw4c" path="res://scripts/game/bricks/red/subtraction.gd" id="2_4cfvu"]
+
+[node name="Subtraction" unique_id=1103306286 instance=ExtResource("1_itw5a")]
+script = ExtResource("2_4cfvu")
