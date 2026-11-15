@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cpgnenf74fw5x"]
+
+[ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_r4ecq"]
+[ext_resource type="Script" uid="uid://b2scpm42pmxdr" path="res://alphabet.gd" id="2_eytee"]
+[ext_resource type="Texture2D" uid="uid://7ytuh1vwmi84" path="res://assets/sprites/Rectangles/Blue/BlueAlphabet.png" id="3_gxh32"]
+
+[node name="alphabetBlock" unique_id=1103306286 instance=ExtResource("1_r4ecq")]
+script = ExtResource("2_eytee")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_gxh32")

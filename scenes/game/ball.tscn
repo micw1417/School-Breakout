@@ -3,17 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://bek5y83ceb2ed" path="res://assets/sprites/balls.png" id="1_ghx6m"]
 [ext_resource type="Script" uid="uid://cgb4wvqkeqtfk" path="res://scenes/game/ball.gd" id="1_hie4g"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7h61r"]
-friction = 0.0
-bounce = 0.8
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_7h61r"]
 radius = 7.0
 
-[node name="Ball" type="RigidBody2D" unique_id=1803944361]
-physics_material_override = SubResource("PhysicsMaterial_7h61r")
-gravity_scale = 0.0
-linear_velocity = Vector2(0, 50)
+[node name="Ball" type="RigidBody2D" unique_id=1688012274]
 script = ExtResource("1_hie4g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2095020606]

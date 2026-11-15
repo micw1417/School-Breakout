@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://by2fgmuoygxfj"]
 
 [ext_resource type="Script" uid="uid://h243ns4lyv0t" path="res://scripts/game/game.gd" id="1_7h61r"]
+[ext_resource type="Texture2D" uid="uid://cn1tfn0pdyhsr" path="res://assets/sprites/Moogle.png" id="2_kelw5"]
 [ext_resource type="PackedScene" uid="uid://be4fl2p7lf6gu" path="res://scenes/game/ball.tscn" id="3_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://b77c0x7i8nhjv" path="res://scenes/game/player_paddle.tscn" id="3_kelw5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_gc5dt"]
-distance = -128.96483
+distance = -131.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j67wb"]
 normal = Vector2(1, 0)
@@ -16,6 +17,11 @@ normal = Vector2(-1, 0)
 [node name="Game" type="Node2D" unique_id=289556916]
 script = ExtResource("1_7h61r")
 
+[node name="Moogle" type="Sprite2D" parent="." unique_id=1990225550]
+texture_filter = 1
+position = Vector2(160, 90)
+texture = ExtResource("2_kelw5")
+
 [node name="Points" type="Label" parent="." unique_id=483832541]
 offset_left = 3.0
 offset_top = 13.0
@@ -24,6 +30,7 @@ offset_bottom = 121.0
 scale = Vector2(0.5, 0.5)
 text = "Points:
 "
+autowrap_mode = 2
 
 [node name="Walls" type="StaticBody2D" parent="." unique_id=911434545]
 
@@ -32,35 +39,17 @@ position = Vector2(152, 130)
 rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_gc5dt")
 
-[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D3" unique_id=396637206]
-position = Vector2(35.000008, 125)
-rotation = 1.5707964
-scale = Vector2(1, 1.0171429)
-points = PackedVector2Array(11, -19, 10, -78, 9, -24, 11, 46, 11.58305, 151.29538)
-default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=1794605270]
-position = Vector2(29, 97)
+position = Vector2(34, 98)
 shape = SubResource("WorldBoundaryShape2D_j67wb")
 
-[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D" unique_id=707922995]
-position = Vector2(-1, 2)
-scale = Vector2(1, 1.0171429)
-points = PackedVector2Array(11, -19, 11, -96.84831, 9, -24, 11, 46, 11, 77)
-default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
-
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=245030175]
-position = Vector2(286, 97)
+position = Vector2(285, 98)
 shape = SubResource("WorldBoundaryShape2D_h0q5y")
 
-[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D2" unique_id=1509533958]
-position = Vector2(-14, 3)
-scale = Vector2(1, 1.0171429)
-points = PackedVector2Array(11, -19, 7, -97.33145, 9, -24, 9.265778, -14.697556, 11, 46, 11, 77)
-default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
-
 [node name="Ball" parent="." unique_id=1803944361 instance=ExtResource("3_0sr1o")]
-position = Vector2(178, 107)
+position = Vector2(162, 126)
+gravity_scale = 0.0
 
 [node name="Paddle" parent="." unique_id=1435024935 instance=ExtResource("3_kelw5")]
-position = Vector2(142, 162)
+position = Vector2(161, 166)
