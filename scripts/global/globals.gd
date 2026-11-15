@@ -2,7 +2,8 @@ extends Node
 
 static var points : int
 static var levels_beat := 0
-
+static var is_active := false
+#blocks_invintory
 static var lvl_1_blocks = {
 	"Multiplication":
 		{"price": 67, "image": preload("uid://cse58se1avw7w"), "description": ""},

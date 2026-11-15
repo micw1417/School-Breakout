@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crt6y1be5akb2"
-path="res://.godot/imported/OrangeCensus.png-485a466135736e9812cdb7eeef4fb0ac.ctex"
+uid="uid://cn1tfn0pdyhsr"
+path="res://.godot/imported/Moogle.png-e22ed2d6fa9684687b9a4b67196a59a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/OrangeCensus.png"
-dest_files=["res://.godot/imported/OrangeCensus.png-485a466135736e9812cdb7eeef4fb0ac.ctex"]
+source_file="res://assets/sprites/Moogle.png"
+dest_files=["res://.godot/imported/Moogle.png-e22ed2d6fa9684687b9a4b67196a59a4.ctex"]
 
 [params]
 
