@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_dcprl"]
 [ext_resource type="Script" uid="uid://g2m2b2hqmlus" path="res://scripts/game/bricks/red/addition.gd" id="2_wdc54"]
+[ext_resource type="Texture2D" uid="uid://dda7vbsju4nav" path="res://assets/sprites/Rectangles/Red/RedAddition.png" id="3_wdc54"]
 
 [node name="Addition" unique_id=1103306286 instance=ExtResource("1_dcprl")]
 script = ExtResource("2_wdc54")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_wdc54")

@@ -1,5 +1,7 @@
 extends Node
 
+static var paddle = null
+static var ball = null
 static var points : int
 static var levels_beat := 0
 static var is_active := false
