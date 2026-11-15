@@ -1,9 +1,32 @@
 [gd_scene format=3 uid="uid://c3tyuupv71nmw"]
 
-[node name="SellBlock" type="Control" unique_id=1747621845]
+[ext_resource type="Script" uid="uid://dsdwv62srg1ed" path="res://scripts/game/shop/sell_block.gd" id="1_fqlvl"]
+[ext_resource type="Texture2D" uid="uid://by141oiiiotwk" path="res://assets/unused/temp_shopitem.png" id="2_d3k0n"]
+
+[node name="SellBlock" type="Control" unique_id=1747621845 node_paths=PackedStringArray("card_frame")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fqlvl")
+card_frame = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1951894428]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 30.0
+texture = ExtResource("2_d3k0n")
+
+[node name="Price" type="Label" parent="TextureRect" unique_id=1234094203]
+layout_mode = 0
+offset_left = -7.0
+offset_top = 26.0
+offset_right = 49.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 12
+text = "100 pts"
+horizontal_alignment = 1
+vertical_alignment = 1
