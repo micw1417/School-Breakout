@@ -2,6 +2,84 @@
 
 [ext_resource type="Script" uid="uid://dvtiobyymxpj2" path="res://scripts/game/shop/shop.gd" id="1_4xm6x"]
 [ext_resource type="PackedScene" uid="uid://c3tyuupv71nmw" path="res://scenes/game/sell_block.tscn" id="2_7xpr6"]
+[ext_resource type="Texture2D" uid="uid://1bvyws7rkl7u" path="res://assets/sprites/Shop.png" id="3_5dhir"]
+[ext_resource type="Texture2D" uid="uid://cbnq7s4r27eeq" path="res://icon.svg" id="4_0kdc8"]
+
+[sub_resource type="Animation" id="Animation_gps3y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TransitionFromGame/Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TransitionFromGame/Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_0kdc8"]
+resource_name = "go_back"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TransitionFromGame/Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xy8ah"]
+resource_name = "transition_from_main"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TransitionFromGame/Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TransitionFromGame/Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.01),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_regtu"]
+_data = {
+&"RESET": SubResource("Animation_gps3y"),
+&"go_back": SubResource("Animation_0kdc8"),
+&"transition_from_main": SubResource("Animation_xy8ah")
+}
 
 [node name="Shop" type="Control" unique_id=693081891 node_paths=PackedStringArray("block_container_1", "block_container_2")]
 layout_mode = 3
@@ -15,6 +93,16 @@ sell_block = ExtResource("2_7xpr6")
 block_container_1 = NodePath("Row1")
 block_container_2 = NodePath("Row2")
 
+[node name="Shop" type="Sprite2D" parent="." unique_id=10474967]
+position = Vector2(160, 90)
+texture = ExtResource("3_5dhir")
+
+[node name="ColorRect" type="ColorRect" parent="Shop" unique_id=904604024]
+offset_top = -91.0
+offset_right = 161.0
+offset_bottom = 91.0
+color = Color(0, 0, 0, 0.5647059)
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1305212957]
 layout_mode = 0
 offset_right = 40.0
@@ -23,14 +111,33 @@ offset_bottom = 40.0
 [node name="Row1" type="HBoxContainer" parent="." unique_id=202479686]
 layout_mode = 0
 offset_left = 181.0
+offset_top = 11.0
 offset_right = 221.0
-offset_bottom = 40.0
+offset_bottom = 51.0
 theme_override_constants/separation = 24
 
 [node name="Row2" type="HBoxContainer" parent="." unique_id=2088931250]
 layout_mode = 0
 offset_left = 181.0
-offset_top = 90.0
+offset_top = 101.0
 offset_right = 221.0
-offset_bottom = 130.0
+offset_bottom = 141.0
 theme_override_constants/separation = 24
+
+[node name="TransitionFromGame" type="AnimationPlayer" parent="." unique_id=958697160]
+libraries/ = SubResource("AnimationLibrary_regtu")
+autoplay = &"transition_from_main"
+
+[node name="Sprite2D" type="Sprite2D" parent="TransitionFromGame" unique_id=780684614]
+self_modulate = Color(0, 0, 0, 0)
+position = Vector2(155.5, 81.5)
+scale = Vector2(3.4296875, 2.2734375)
+texture = ExtResource("4_0kdc8")
+
+[node name="Button" type="Button" parent="." unique_id=1655702626]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 147.0
+offset_right = 74.0
+offset_bottom = 178.0
+text = "Go Back"

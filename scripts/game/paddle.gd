@@ -5,7 +5,7 @@ var speed = 150
 var acceleration = 30
 
 func _ready() -> void:
-	pass
+	Globals.paddle = self
 
 
 func _process(delta: float) -> void:

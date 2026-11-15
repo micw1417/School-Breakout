@@ -37,3 +37,6 @@ func _process(delta: float) -> void:
 		ball.global_position = Vector2(paddle.position.x, paddle.position.y - 10)
 
 	pointsLabel.text = "Points: " + str(Globals.points)  + "/" + str(levelRequirments)
+
+func shop_transition():
+	get_tree().change_scene_to_file("res://scenes/game/shop.tscn")

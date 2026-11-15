@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_eoujx"]
 [ext_resource type="Script" uid="uid://dipr671tgl2fe" path="res://scripts/game/bricks/red/multiplication.gd" id="2_j73xs"]
+[ext_resource type="Texture2D" uid="uid://cse58se1avw7w" path="res://assets/sprites/Rectangles/Red/RedMultiply.png" id="3_j73xs"]
 
 [node name="Multiplication" unique_id=1103306286 instance=ExtResource("1_eoujx")]
 script = ExtResource("2_j73xs")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_j73xs")

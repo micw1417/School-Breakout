@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_46wkc"]
 [ext_resource type="Script" uid="uid://bn55aclqhe02" path="res://scripts/game/bricks/red/division.gd" id="2_vqmpu"]
+[ext_resource type="Texture2D" uid="uid://da5mhjofb63o0" path="res://assets/sprites/Rectangles/Red/RedDivide.png" id="3_vqmpu"]
 
 [node name="Division" unique_id=1103306286 instance=ExtResource("1_46wkc")]
 script = ExtResource("2_vqmpu")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_vqmpu")
