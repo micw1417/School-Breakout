@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b5c2udo0fykgq"]
+
+[node name="Shop" type="Control" unique_id=693081891]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1305212957]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=202479686]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
