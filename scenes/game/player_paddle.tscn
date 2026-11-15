@@ -4,15 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://wp251v1yu5rd" path="res://assets/sprites/paddle.png" id="2_6sif3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dp0f"]
-size = Vector2(18, 10)
+size = Vector2(81, 10)
 
 [node name="Paddle" type="CharacterBody2D" unique_id=1435024935]
 script = ExtResource("1_8w2sc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438714077]
 texture_filter = 1
+scale = Vector2(5, 1)
 texture = ExtResource("2_6sif3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=321579119]
-position = Vector2(0, 2)
+position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_7dp0f")

@@ -1,23 +1,24 @@
 [gd_scene format=3 uid="uid://be4fl2p7lf6gu"]
 
-[ext_resource type="Texture2D" uid="uid://cbnq7s4r27eeq" path="res://icon.svg" id="1_ghx6m"]
+[ext_resource type="Texture2D" uid="uid://bek5y83ceb2ed" path="res://assets/sprites/balls.png" id="1_ghx6m"]
+[ext_resource type="Script" uid="uid://cgb4wvqkeqtfk" path="res://scenes/game/ball.gd" id="1_hie4g"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7h61r"]
 friction = 0.0
 bounce = 0.8
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ffoxf"]
-radius = 5.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_7h61r"]
+radius = 7.0
 
 [node name="Ball" type="RigidBody2D" unique_id=1803944361]
 physics_material_override = SubResource("PhysicsMaterial_7h61r")
 gravity_scale = 0.0
 linear_velocity = Vector2(0, 50)
+script = ExtResource("1_hie4g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2095020606]
-shape = SubResource("CircleShape2D_ffoxf")
+shape = SubResource("CircleShape2D_7h61r")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=663858108]
-position = Vector2(-9.536743e-07, -9.536743e-07)
-scale = Vector2(0.06640629, 0.06640629)
+position = Vector2(-5.684342e-14, -5.684342e-14)
 texture = ExtResource("1_ghx6m")
