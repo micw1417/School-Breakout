@@ -1,5 +1,66 @@
 [gd_scene format=3 uid="uid://by2fgmuoygxfj"]
 
+[ext_resource type="Script" uid="uid://h243ns4lyv0t" path="res://scripts/game/game.gd" id="1_7h61r"]
+[ext_resource type="PackedScene" uid="uid://7rsx78hasyoj" path="res://scenes/paddle.tscn" id="2_0sr1o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h61r"]
+size = Vector2(20, 232.89932)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sr1o"]
+size = Vector2(20, 232.89932)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j67wb"]
+size = Vector2(20, 232.89932)
+
+[node name="Game" type="Node2D" unique_id=289556916]
+script = ExtResource("1_7h61r")
+
+[node name="Label" type="Label" parent="." unique_id=483832541]
+offset_left = 3.0
+offset_top = 21.0
+offset_right = 85.0
+offset_bottom = 129.0
+scale = Vector2(0.5, 0.5)
+text = "Points:
+ 0/0"
+
+[node name="paddle" parent="." unique_id=179163227 instance=ExtResource("2_0sr1o")]
+position = Vector2(135, 163)
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=911434545]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls" unique_id=1772221492]
+position = Vector2(161, -2)
+rotation = 1.5810795
+shape = SubResource("RectangleShape2D_7h61r")
+
+[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D3" unique_id=396637206]
+position = Vector2(-2.7402682, -34.525993)
+scale = Vector2(1, 1.0171429)
+points = PackedVector2Array(11, -19, 10, -78, 9, -24, 11, 46, 11.58305, 151.29538)
+default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=1794605270]
+position = Vector2(29, 97)
+shape = SubResource("RectangleShape2D_0sr1o")
+
+[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D" unique_id=707922995]
+position = Vector2(-2, 2.5085754)
+scale = Vector2(1, 1.0171429)
+points = PackedVector2Array(11, -19, 11, -96.84831, 9, -24, 11, 46, 11, 77)
+default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=245030175]
+position = Vector2(286, 97)
+shape = SubResource("RectangleShape2D_j67wb")
+
+[node name="Line2D" type="Line2D" parent="Walls/CollisionShape2D2" unique_id=1509533958]
+position = Vector2(-14, 3)
+scale = Vector2(1, 1.0171429)
+points = PackedVector2Array(11, -19, 7, -97.33145, 9, -24, 9.265778, -14.697556, 11, 46, 11, 77)
+default_color = Color(0.019607844, 0.05882353, 0.05490196, 1)
+[gd_scene format=3 uid="uid://by2fgmuoygxfj"]
+
 [ext_resource type="PackedScene" uid="uid://7rsx78hasyoj" path="res://scenes/game/paddle.tscn" id="1_80nbo"]
 [ext_resource type="PackedScene" uid="uid://be4fl2p7lf6gu" path="res://scenes/game/ball.tscn" id="2_7h61r"]
 [ext_resource type="PackedScene" uid="uid://b77c0x7i8nhjv" path="res://scenes/game/player_paddle.tscn" id="3_0sr1o"]
