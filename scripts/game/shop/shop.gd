@@ -19,3 +19,10 @@ func _ready() -> void:
 	for i in range(2):
 		var sell_block_instance = sell_block.instantiate()
 		block_container_2.add_child(sell_block_instance)
+
+func shop_transition():
+	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.
