@@ -120,11 +120,13 @@ offset_bottom = 91.0
 color = Color(0, 0, 0, 0.5647059)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1305212957]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Row1" type="HBoxContainer" parent="." unique_id=202479686]
+visible = false
 layout_mode = 0
 offset_left = 181.0
 offset_top = 11.0
@@ -133,6 +135,7 @@ offset_bottom = 51.0
 theme_override_constants/separation = 24
 
 [node name="Row2" type="HBoxContainer" parent="." unique_id=2088931250]
+visible = false
 layout_mode = 0
 offset_left = 181.0
 offset_top = 101.0
