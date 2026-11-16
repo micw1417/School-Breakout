@@ -24,7 +24,7 @@ var columns = 6
 var rows = 4
 var blocksizeX = 30 + 1
 var blocksizeY = 15 + 1
-var levelRequirments = 20
+var levelRequirments = 50
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	grid_setup()
@@ -72,9 +72,7 @@ func death():
 			Globals.is_active = false
 			paddle.global_position = Vector2(160, 165)
 	else:
-		if (Globals.points > levelRequirments):
-			Globals.currentLevel += 1
-			Globals.points = 0
+		Globals.currentLevel += 1
 		get_tree().change_scene_to_file("res://scenes/game/shop.tscn")
 	
 	
