@@ -4,8 +4,10 @@ class_name Shop
 @export var sell_block: PackedScene
 @export var block_container_1: HBoxContainer
 @export var block_container_2: HBoxContainer
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
+	
 	randomize()
 	var available_blocks = Globals.lvl_1_blocks.keys()
 	available_blocks.shuffle()
@@ -28,3 +30,7 @@ func shop_transition():
 
 func _on_button_pressed() -> void:
 	pass # Replace with function body.
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	animated_sprite_2d.visible = false

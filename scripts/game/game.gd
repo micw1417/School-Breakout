@@ -31,12 +31,21 @@ func _ready() -> void:
 	level_sprite.texture = load(sprite_path)
 	paddle.global_position = Vector2(160, 165)
 
+func _on_lives_upped():
+	lives.set_frame(Globals.lives)
+	print("Extra life received!")
+	
+func shop_transition():
+	get_tree().change_scene_to_file("res://scenes/game/shop.tscn")
 func grid_setup():
 	for r in rows:
 		for c in columns:
 			randomize()
 			var brick_scene = Globals.MEGA_ARRAY.pick_random()
 			var new_brick = brick_scene.instantiate()
+			# For president block
+			if new_brick.has_signal("lives_upped"):
+				new_brick.lives_upped.connect(_on_lives_upped)
 			add_child(new_brick)
 			new_brick.position = Vector2(80 + (blocksizeX * c), 15 + (blocksizeY * r))
 
@@ -69,6 +78,3 @@ func death():
 		get_tree().change_scene_to_file("res://scenes/game/shop.tscn")
 	
 	
-
-func shop_transition():
-	get_tree().change_scene_to_file("res://scenes/game/shop.tscn")
