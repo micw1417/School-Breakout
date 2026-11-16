@@ -29,20 +29,21 @@ var blocksizeX = 30 + 1
 var blocksizeY = 15 + 1
 var currentLevel = 0
 var levelRequirments = 20
-var blocks := [[ BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, ALPHABET_BLOCK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK]]
+var rand_brick = Globals.MEGA_ARRAY.pick_random()
+var blocks := [[ rand_brick, rand_brick, rand_brick, rand_brick, rand_brick, rand_brick],
+				[rand_brick, rand_brick, rand_brick, rand_brick, rand_brick, rand_brick],
+				[rand_brick, rand_brick, rand_brick, rand_brick, rand_brick, rand_brick],
+				[rand_brick, rand_brick, rand_brick, rand_brick, rand_brick, rand_brick]]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	grid_setup()
 	paddle.global_position = Vector2(160, 165)
 
-
 func grid_setup():
 	for r in rows:
 		for c in columns: 
 			var newBrick =  blocks[r][c].instantiate()
+			randomize()
 			add_child(newBrick)
 			newBrick.position = Vector2(80 + (blocksizeX * c), 15 + (blocksizeY * r))
 

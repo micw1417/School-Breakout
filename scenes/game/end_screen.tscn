@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://csd01oisp4dy8"]
+
+[ext_resource type="Texture2D" uid="uid://bpmwkiivbw14c" path="res://assets/sprites/TitleScreen.png" id="1_m5nxi"]
+[ext_resource type="Texture2D" uid="uid://cuq52w5f6asfj" path="res://assets/tfp.png" id="2_u5k3h"]
+
+[node name="EndScreen" type="Node2D" unique_id=931433375]
+
+[node name="TitleScreen" type="Sprite2D" parent="." unique_id=784467557]
+position = Vector2(160, 90)
+texture = ExtResource("1_m5nxi")
+
+[node name="Tfp" type="Sprite2D" parent="." unique_id=1741507073]
+position = Vector2(205, 100)
+scale = Vector2(0.94375, 0.9111111)
+texture = ExtResource("2_u5k3h")
