@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_bdtjo"]
 [ext_resource type="Script" uid="uid://edbf6qmebg2n" path="res://scripts/game/bricks/purple/paper_airplane.gd" id="2_buse3"]
+[ext_resource type="Texture2D" uid="uid://dey278iwq812v" path="res://assets/sprites/Rectangles/Purple/PurpleAirplane.png" id="3_buse3"]
 
 [node name="PaperAirplane" unique_id=1103306286 instance=ExtResource("1_bdtjo")]
 script = ExtResource("2_buse3")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_buse3")

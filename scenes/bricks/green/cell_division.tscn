@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_anmao"]
 [ext_resource type="Script" uid="uid://dqmg7fauuedw4" path="res://scripts/game/bricks/green/cell_division.gd" id="2_rd1oa"]
+[ext_resource type="Texture2D" uid="uid://e6k3x24wplk4" path="res://assets/sprites/Rectangles/Green/GreenCell.png" id="3_rd1oa"]
 
 [node name="CellDivision" unique_id=1103306286 instance=ExtResource("1_anmao")]
 script = ExtResource("2_rd1oa")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_rd1oa")

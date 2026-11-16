@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_hj6n1"]
 [ext_resource type="Script" uid="uid://caprfynyxm80r" path="res://scripts/game/bricks/purple/outline.gd" id="2_ulqot"]
+[ext_resource type="Texture2D" uid="uid://bhjpgqc5xvc6b" path="res://assets/sprites/Rectangles/Purple/PurpleOutline.png" id="3_ulqot"]
 
 [node name="Outline" unique_id=1103306286 instance=ExtResource("1_hj6n1")]
 script = ExtResource("2_ulqot")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_ulqot")

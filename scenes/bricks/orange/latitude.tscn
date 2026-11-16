@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_u0n22"]
 [ext_resource type="Script" uid="uid://g3tovo5ce2ng" path="res://scripts/game/bricks/orange/latitude.gd" id="2_pgg1u"]
+[ext_resource type="Texture2D" uid="uid://pbqto63w4j2s" path="res://assets/sprites/Rectangles/Orange/OrangeLatitude.png" id="3_pgg1u"]
 
 [node name="Latitude" unique_id=1103306286 instance=ExtResource("1_u0n22")]
 script = ExtResource("2_pgg1u")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_pgg1u")
