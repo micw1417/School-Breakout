@@ -33,22 +33,18 @@ func _ready() -> void:
 
 func grid_setup():
 	for r in rows:
-<<<<<<< Updated upstream
-		for c in columns: 
-			var newBrick =  Globals.blocks[r][c].instantiate()
-			add_child(newBrick)
-			newBrick.position = Vector2(80 + (blocksizeX * c), 15 + (blocksizeY * r))
-=======
 		for c in columns:
 			randomize()
 			var brick_scene = Globals.MEGA_ARRAY.pick_random()
 			var new_brick = brick_scene.instantiate()
 			add_child(new_brick)
 			new_brick.position = Vector2(80 + (blocksizeX * c), 15 + (blocksizeY * r))
->>>>>>> Stashed changes
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if Globals.points == 50:
+		get_tree().change_scene_to_file("res://scenes/game/end_screen.tscn")
+	
 	if (not Globals.is_active):
 		ball.global_position = Vector2(paddle.position.x, paddle.position.y - 10)
 	

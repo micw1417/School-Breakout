@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://1bvyws7rkl7u" path="res://assets/sprites/Shop.png" id="3_5dhir"]
 [ext_resource type="Texture2D" uid="uid://cbnq7s4r27eeq" path="res://icon.svg" id="4_0kdc8"]
 [ext_resource type="Script" uid="uid://y78wl6vjmb1i" path="res://scripts/game/shop/go_back_button.gd" id="5_gps3y"]
+[ext_resource type="Texture2D" uid="uid://b0leqclpjuu7j" path="res://assets/sprites/Return.png" id="5_xy8ah"]
 
 [sub_resource type="Animation" id="Animation_gps3y"]
 length = 0.001
@@ -96,6 +97,18 @@ _data = {
 &"transition_from_main": SubResource("Animation_xy8ah")
 }
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_regtu"]
+texture = ExtResource("5_xy8ah")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xy8ah"]
+texture = ExtResource("5_xy8ah")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cd5ye"]
+texture = ExtResource("5_xy8ah")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i86gn"]
+texture = ExtResource("5_xy8ah")
+
 [node name="Shop" type="Control" unique_id=693081891 node_paths=PackedStringArray("block_container_1", "block_container_2")]
 layout_mode = 3
 anchors_preset = 15
@@ -153,13 +166,16 @@ position = Vector2(155.5, 81.5)
 scale = Vector2(3.4296875, 2.2734375)
 texture = ExtResource("4_0kdc8")
 
-[node name="Button" type="Button" parent="." unique_id=1655702626]
+[node name="Button" type="Button" parent="." unique_id=891420570]
 layout_mode = 0
-offset_left = 85.0
-offset_top = 53.0
-offset_right = 241.0
-offset_bottom = 121.0
-text = "Go Back"
+offset_left = 112.0
+offset_top = 62.0
+offset_right = 212.0
+offset_bottom = 112.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_regtu")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_xy8ah")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cd5ye")
+theme_override_styles/hover = SubResource("StyleBoxTexture_i86gn")
 script = ExtResource("5_gps3y")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
