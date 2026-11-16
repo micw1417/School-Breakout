@@ -113,6 +113,7 @@ position = Vector2(160, 90)
 texture = ExtResource("3_5dhir")
 
 [node name="ColorRect" type="ColorRect" parent="Shop" unique_id=904604024]
+visible = false
 offset_top = -91.0
 offset_right = 161.0
 offset_bottom = 91.0
@@ -151,10 +152,10 @@ texture = ExtResource("4_0kdc8")
 
 [node name="Button" type="Button" parent="." unique_id=1655702626]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 147.0
-offset_right = 74.0
-offset_bottom = 178.0
+offset_left = 85.0
+offset_top = 53.0
+offset_right = 241.0
+offset_bottom = 121.0
 text = "Go Back"
 script = ExtResource("5_gps3y")
 

@@ -25,13 +25,11 @@ var rows = 4
 var blocksizeX = 30 + 1
 var blocksizeY = 15 + 1
 var levelRequirments = 20
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	grid_setup()
 	level_sprite.texture = load(sprite_path)
 	paddle.global_position = Vector2(160, 165)
-
 
 func grid_setup():
 	for r in rows:

@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_avsnn"]
 [ext_resource type="Script" uid="uid://c7d5wmwf2sm5x" path="res://scripts/game/bricks/purple/spill.gd" id="2_iewbd"]
+[ext_resource type="Texture2D" uid="uid://2ap8tst5bm7x" path="res://assets/sprites/Rectangles/Purple/PurpleSpill.png" id="3_iewbd"]
 
 [node name="Spill" unique_id=1103306286 instance=ExtResource("1_avsnn")]
 script = ExtResource("2_iewbd")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_iewbd")

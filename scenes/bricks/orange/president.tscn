@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bp37okfpnhm61" path="res://scenes/bricks/base_brick.tscn" id="1_j7cad"]
 [ext_resource type="Script" uid="uid://cftrq36a47a2u" path="res://scripts/game/bricks/orange/president.gd" id="2_8dm1m"]
+[ext_resource type="Texture2D" uid="uid://da7703g6ik0gq" path="res://assets/sprites/Rectangles/Orange/OrangePresident.png" id="3_8dm1m"]
 
 [node name="President" unique_id=1103306286 instance=ExtResource("1_j7cad")]
 script = ExtResource("2_8dm1m")
+
+[node name="BlankBlock" parent="." index="0" unique_id=1873938849]
+texture = ExtResource("3_8dm1m")
