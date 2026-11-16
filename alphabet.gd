@@ -13,11 +13,8 @@ func _process(delta: float) -> void:
 
 	
 func _on_detection_body_entered(body: Node2D) -> void:
-	print(body)
 	if (body is Ball):
 		queue_free() 
 		Globals.points+=1
-		# Spawn temp balls after that expire after like 2 sec?
-		print("entered")
-		
+		# Spawn temp balls after that expire after like 2 sec?		
 		

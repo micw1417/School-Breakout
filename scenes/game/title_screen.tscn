@@ -1,25 +1,41 @@
 [gd_scene format=3 uid="uid://c8phgb0qsuai1"]
 
 [ext_resource type="Texture2D" uid="uid://bpmwkiivbw14c" path="res://assets/sprites/TitleScreen.png" id="1_3t1qn"]
+[ext_resource type="Script" uid="uid://66753yleidaa" path="res://scripts/game/title_screen.gd" id="1_idahx"]
 [ext_resource type="Texture2D" uid="uid://br0nxne7ag40h" path="res://assets/sprites/ZoneOut.png" id="2_idahx"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idahx"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="TitleScreen" type="Node2D" unique_id=1970658385]
+script = ExtResource("1_idahx")
 
 [node name="TitleScreen" type="Sprite2D" parent="." unique_id=761945569]
 position = Vector2(159, 90)
 texture = ExtResource("1_3t1qn")
 
 [node name="ZoneOut" type="Sprite2D" parent="." unique_id=1302171442]
-position = Vector2(12, -18)
+position = Vector2(191, 75)
 texture = ExtResource("2_idahx")
 
 [node name="Button" type="Button" parent="ZoneOut" unique_id=654613242]
-visible = false
 offset_left = -47.0
 offset_top = -16.0
 offset_right = 47.0
 offset_bottom = 17.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_idahx")
 
 [node name="Area2D" type="Area2D" parent="ZoneOut/Button" unique_id=86411118]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZoneOut/Button/Area2D" unique_id=704046177]
+
+[connection signal="pressed" from="ZoneOut/Button" to="." method="_on_button_pressed"]

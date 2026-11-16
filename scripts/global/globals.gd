@@ -7,6 +7,7 @@ static var levels_beat := 0
 static var is_active := false
 static var lives: = 3
 static var currentLevel := Levels.ENGLISH
+static var WINS := 0
 
 enum Levels {
 	ENGLISH,
@@ -15,8 +16,13 @@ enum Levels {
 	SCIENCE,
 	ART
 }
+const ALPHABET_BLOCK = preload("res://scenes/bricks/alphabet_block.tscn")
+const BASE_BRICK = preload("res://scenes/bricks/base_brick.tscn")
 
-
+var blocks := [[ BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
+				[BASE_BRICK, ALPHABET_BLOCK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
+				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
+				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK]]
 #blocks_invintory
 static var lvl_1_blocks = {
 	"Multiplication":

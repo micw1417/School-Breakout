@@ -4,7 +4,6 @@ extends Node2D
 @onready var ball: Ball = $Ball
 @onready var pointsLabel: Label = $Points
 # All the block
-const ALPHABET_BLOCK = preload("res://scenes/bricks/alphabet_block.tscn")
 @onready var lives: AnimatedSprite2D = $Lives
 @onready var level_sprite: Sprite2D = $LevelSprite
 
@@ -20,29 +19,24 @@ var sprite_path = LEVEL_SPRITES[Globals.currentLevel]
 
 
 
-const BASE_BRICK = preload("res://scenes/bricks/base_brick.tscn")
 
-var points = 0
 var columns = 6
 var rows = 4
 var blocksizeX = 30 + 1
 var blocksizeY = 15 + 1
-var currentLevel = 0
 var levelRequirments = 20
-var blocks := [[ BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, ALPHABET_BLOCK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK],
-				[BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK, BASE_BRICK]]
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	grid_setup()
+	level_sprite.texture = load(sprite_path)
 	paddle.global_position = Vector2(160, 165)
 
 
 func grid_setup():
 	for r in rows:
 		for c in columns: 
-			var newBrick =  blocks[r][c].instantiate()
+			var newBrick =  Globals.blocks[r][c].instantiate()
 			add_child(newBrick)
 			newBrick.position = Vector2(80 + (blocksizeX * c), 15 + (blocksizeY * r))
 
@@ -56,7 +50,7 @@ func _process(delta: float) -> void:
 	pointsLabel.text = "Points: " + str(Globals.points)  + "/" + str(levelRequirments)
 
 func _input(event: InputEvent) -> void:
-	if ( Input.is_action_just_pressed("start")):
+	if ( Input.is_action_just_pressed("start") and not Globals.is_active):
 		Globals.lives -= 1
 		lives.set_frame(Globals.lives)
 		Globals.is_active = true
@@ -66,8 +60,9 @@ func death():
 			Globals.is_active = false
 			paddle.global_position = Vector2(160, 165)
 	else:
-		if (points > levelRequirments):
-			Globals.levels += 1
+		if (Globals.points > levelRequirments):
+			Globals.currentLevel += 1
+			Globals.points = 0
 		get_tree().change_scene_to_file("res://scenes/game/shop.tscn")
 	
 	

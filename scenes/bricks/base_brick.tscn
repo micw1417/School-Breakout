@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dn3r2ajcc5sp" path="res://assets/sprites/Rectangles/BlankBlock.png" id="1_t2y5r"]
 [ext_resource type="Script" uid="uid://neu0i7nad582" path="res://scripts/game/bricks/base_brick.gd" id="1_ttr2m"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j67wb"]
-size = Vector2(40, 21.333334)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttr2m"]
+size = Vector2(21.316666, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc5dt"]
 size = Vector2(29, 14.5)
@@ -19,10 +19,12 @@ texture = ExtResource("1_t2y5r")
 scale = Vector2(0.75, 0.75)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=241965724]
-position = Vector2(0, -4.7683716e-07)
-shape = SubResource("RectangleShape2D_j67wb")
+position = Vector2(2.221997e-08, -0.008333683)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ttr2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=822278428]
+visible = false
 position = Vector2(0, 0.25)
 shape = SubResource("RectangleShape2D_gc5dt")
 

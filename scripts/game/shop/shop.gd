@@ -21,6 +21,8 @@ func _ready() -> void:
 		block_container_2.add_child(sell_block_instance)
 
 func shop_transition():
+	Globals.is_active = false
+	Globals.lives = 3
 	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
 
 
